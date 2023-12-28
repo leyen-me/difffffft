@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 我的博客
-      link: /markdown-examples
+      link: http://blog.difffffft.com/
     - theme: alt
       text: 联系我
-      link: /api-examples
+      link: /contact
 
 features:
   - title: flask-starter
