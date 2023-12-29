@@ -17,18 +17,21 @@ hero:
 features:
   - title: flask-starter
     details: 一个用python和flask实现的后端框架
-    link: https://github.com/difffffft/flask-starter
+    link: http://admin.difffffft.com
   - title: flask-vue-starter
     details: flask-starter配套的前端框架
-    link: https://github.com/difffffft/flask-vue-starter
+    link: http://admin.difffffft.com
   - title: search
     details: 一个导航网站
-    link: https://github.com/difffffft/search
+    link: https://difffffft.com/search
   - title: openai-proxy
     details: openai反向代理工具
     link: https://github.com/difffffft/openai-proxy
   - title: chat-server
-    details: 一个基于openai的SDK构建的自定义聊天服务
-    link: https://github.com/difffffft/chat-server
+    details: 一个基于openai的SDK构建的自定义聊天服务的后端
+    link: http://chat.difffffft.com/
+  - title: chat-client
+    details: 一个基于openai的SDK构建的自定义聊天服务的前端
+    link: http://chat.difffffft.com/
 ---
 
