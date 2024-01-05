@@ -26,9 +26,6 @@ const items1_1 = [
     { text: '部署ElementPlusDoc', link: '/2023-03-28-部署element-plus本地文档到docker/' },
 ]
 
-
-
-
 const items2 = [
     { text: 'linux常用操作', link: '/2023-09-26-linux常用操作/' },
     { text: 'vmware安装', link: '/2023-09-22-vmware安装/' },
@@ -50,20 +47,35 @@ export default defineConfig({
         [
             'link',
             {
-                href: './css/font.css',
+                href: '/css/font.css',
                 rel: 'stylesheet'
             }
         ]
     ],
+    outDir:'../dist',
     appearance: 'dark',
-    lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
     themeConfig: {
-        logo: './assets/svgs/logo.svg',
+        prev: 'false',
+        next: 'false',
+        logo: '/svgs/logo.svg',
+        editLink: {
+            pattern: 'https://github.com/difffffft/edit/main/docs/:path'
+        },
         lastUpdated: true,
         search: {
             provider: 'local'
         },
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2024-present DIFFFFFFT'
+        },
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
+        },
+        outlineTitle: '这一页',
+        lastUpdatedText: '最后更新',
         nav: [
             { text: '首页', link: '/' },
             { text: '博客', link: `/mds/me${items3[0].link}`, activeMatch: '/mds/me/' },

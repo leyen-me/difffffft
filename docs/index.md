@@ -13,7 +13,7 @@ hero:
       text: 在 Github 上查看
       link: https://github.com/difffffft
   image:
-    src: ./assets/images/logo-with-shadow.png
+    src: /images/logo-with-shadow.png
 
 features:
   - title: flask-starter
