@@ -1,18 +1,19 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "DIFFFFFFT"
-  text: "developer,designer"
-  tagline: 谎言不会伤人，真相才是快刀。
+  text: "Web Developer"
+  tagline: 人们在寻找答案，而我在寻找问题
   actions:
     - theme: brand
-      text: 我的博客
+      text: 了解更多
       link: http://blog.difffffft.com/
     - theme: alt
-      text: 联系我
-      link: /contact
+      text: 在 Github 上查看
+      link: https://github.com/difffffft
+  image:
+    src: ./assets/images/logo-with-shadow.png
 
 features:
   - title: flask-starter
