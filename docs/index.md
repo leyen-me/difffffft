@@ -16,23 +16,23 @@ hero:
     src: /images/logo-with-shadow.png
 
 features:
-  - title: flask-starter
-    details: 一个用python和flask实现的后端框架
-    link: http://admin.difffffft.com
-  - title: flask-vue-starter
-    details: flask-starter配套的前端框架
-    link: http://admin.difffffft.com
-  - title: search
-    details: 一个导航网站
-    link: https://difffffft.com/search
-  - title: openai-proxy
-    details: openai反向代理工具
+  - title: Flask-Starter
+    details: 基于Python和Flask搭建的后端服务脚手架，和Flask-Vue-Starter配套使用
+    link: https://github.com/difffffft/flask-starter
+  - title: Flask-Vue-Starter
+    details: 基于Vue3和Element-Plus建的前端基础脚手架，和Flask-Starter配套使用
+    link: https://github.com/difffffft/flask-vue-starter
+  - title: Search
+    details: 一个快捷搜索网站
+    link: https://github.com/difffffft/search
+  - title: Chat-Server
+    details: 基于OpenAi的SDK构建的聊天机器人，可以自定义函数，和Chat-Client配套使用
+    link: https://github.com/difffffft/chat-server
+  - title: Chat-Client
+    details: 基于Vue3和Element-Plus建的聊天机器人，和Chat-Server配套使用
+    link: https://github.com/difffffft/chat-client
+  - title: OpenAi-Proxy
+    details: OpenAi反向代理工具
     link: https://github.com/difffffft/openai-proxy
-  - title: chat-server
-    details: 一个基于openai的SDK构建的自定义聊天服务的后端
-    link: http://chat.difffffft.com/
-  - title: chat-client
-    details: 一个基于openai的SDK构建的自定义聊天服务的前端
-    link: http://chat.difffffft.com/
 ---
 

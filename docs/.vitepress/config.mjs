@@ -52,7 +52,6 @@ export default defineConfig({
             }
         ]
     ],
-    base:'/difffffft/',
     outDir:'../dist',
     appearance: 'dark',
     // https://vitepress.dev/reference/default-theme-config
