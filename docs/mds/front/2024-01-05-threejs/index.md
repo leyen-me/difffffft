@@ -7,20 +7,20 @@ categories:
 
 安装依赖
 
-```
+```shell
 pnpm i three
 pnpm i @types/three -D
 ```
 
 导入
 
-```
+```js
 import * as THREE from "three"
 ```
 
 随界面改变而改变
 
-```
+```js
 // 监听窗口的变化
 window.addEventListener("resize", () => {
     width = window.innerWidth
@@ -35,7 +35,7 @@ window.addEventListener("resize", () => {
 
 GUI
 
-```
+```js
 et eventObj = {
     Fullscreen: () => {
         document.body.requestFullscreen()
@@ -71,7 +71,7 @@ gui.add(eventObj, "Wireframe").name("线框")
 
 射线碰撞
 
-```
+```js
 const raycaster = new THREE.Raycaster()
 const mouse = new THREE.Vector2()
 const historyColor = { value: null, flag: false }
@@ -98,7 +98,7 @@ window.addEventListener("click", (event) => {
 
 轨道控制器
 
-```
+```js
 // 添加轨道控制器, 轨道可是是其他元素
 const controls = new OrbitControls(camera, renderer.domElement)
 // 阻尼效果
@@ -116,14 +116,14 @@ function animate() {
 
 世界坐标助手
 
-```
+```js
 const axesHelper = new THREE.AxesHelper(5)
 scene.add(axesHelper)
 ```
 
 ExrLoader（通常用来加载场景）
 
-```
+```js
 import { EXRLoader } from 'three/addons/loaders/EXRLoader.js';
 
 const pmremGenerator = new THREE.PMREMGenerator(renderer);
@@ -140,7 +140,7 @@ loader.load('./assets/kloppenheim_02_4k.exr', function (texture: any) {
 
 GLTFLoader（通常用来加载模型）
 
-```
+```js
 const gltfLoader = new GLTFLoader()
 gltfLoader.load(
     "./assets/gltf/Nefertiti/Nefertiti.glb",
@@ -154,7 +154,7 @@ scene.background = new THREE.Color(0x999999)
 
 模型 = 几何 + 材质
 
-```
+```js
 const loader1 = new THREE.TextureLoader();
 const textur1 = loader1.load('./assets/jpg/rocks_ground_01_diff_4k.jpg');
 
@@ -168,7 +168,7 @@ scene.add(cube1)
 
 补间动画
 
-```
+```js
 import TWEEN from 'three/addons/libs/tween.module.js';
 
 const tween = new TWEEN.Tween(earth.position)
@@ -194,7 +194,55 @@ tween.start()
 
 法向量辅助器
 
-```
+```js
 const sunVertexNormalsHelper = new VertexNormalsHelper(sun, 0.2, 0x00ff00)
 scene.add(sunVertexNormalsHelper)
+```
+
+包围盒辅助器
+
+```js
+// 计算包围盒
+earth.geometry.computeBoundingBox()
+// 拿到包围盒
+const box = earth.geometry.boundingBox
+// 更新世界矩阵
+sun.updateWorldMatrix(true, true)
+// 应用世界矩阵
+box.applyMatrix4(earth.matrixWorld)
+// 创建包围盒的辅助器
+const boxHelper = new THREE.Box3Helper(box, 0xff0000)
+// 显示包围盒
+scene.add(boxHelper)
+```
+
+多个物体的包围盒
+
+```js
+// 方式一
+let box = new THREE.Box3()
+let arr = [sun, earth]
+for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    element.geometry.computeBoundingBox()
+    element.updateWorldMatrix(true, true)
+    element.geometry.boundingBox?.applyMatrix4(element.matrixWorld)
+    box.union(element.geometry.boundingBox)
+}
+let boxHelper = new THREE.Box3Helper(box, 0xff0000)
+scene.add(boxHelper)
+
+// 方式二
+let box = new THREE.Box3()
+let arr = [sun, earth]
+for (let i = 0; i < arr.length; i++) {
+    box.union(new THREE.Box3().setFromObject(arr[i]))
+}
+let boxHelper = new THREE.Box3Helper(box, 0xff0000)
+scene.add(boxHelper)
+```
+
+边缘几何体展示线框
+```js
+
 ```
