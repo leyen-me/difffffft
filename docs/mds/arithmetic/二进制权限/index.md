@@ -1,10 +1,3 @@
----
-title: "二进制权限"
-date: "2023-12-05"
-categories: 
-  - "前端"
----
-
 用二进制实现权限控制
 
 设计方案采用了二进制位运算来处理文件权限，这是一种高效且常见的方法。在这种设计中，每种权限由一个特定的位表示，可以通过位运算（如与（&）、或（|））来组合和查询权限。这样的方案具有以下优点：
@@ -27,33 +20,32 @@ categories:
 
 这种方案是实际应用中的常见做法，特别是在需要高效处理权限的场景中。您的实现很好地展示了如何在 JavaScript 中应用这种设计。
 
-_/\*\*  
-_ _\*_ _需求：一个文件，有增、删、改、查、分享等__5__种权限，如何设计权限最合理  
-_ _\*_ _方案一__:_ _权限数组__,_ _缺点传输性能问题  
-_ _\*_ _方案二：二进制位运算  
-_ _\*/  
-_const _INSERT_ \= 0b00000001;  
-const _DELETE_ \= 0b00000010;  
-const _UPDATE_ \= 0b00000100;  
-const _QUERY_  \= 0b00001000;  
-const _SHARE_  \= 0b00010000;  
+```js
+/**
+ * 需求：一个文件，有增、删、改、查、分享等__5__种权限，如何设计权限最合理
+ * 方案一: 权限数组,缺点传输性能问题
+ * 方案二: 二进制位运算
+ */
+
+const INSERT = 0b00000001;  
+const DELETE = 0b00000010;  
+const UPDATE = 0b00000100;  
+const QUERY  = 0b00001000;  
+const SHARE  = 0b00010000;  
   
-_/\*\*  
-_ _\*_ _后台管理  
-_ _\*/  
-_// 用户勾选，得到权限数组  
-const _role\_list_ \= \[_INSERT_, _DELETE_, _UPDATE_\]  
+
+// 后台管理  
+// 用户勾选，得到权限数组  
+const role_list = [INSERT, DELETE, UPDATE]  
 // 将权限数组转换成整形，存储在数据库  
-const _role_ \= _role\_list_.reduce((pre, cur) => {  
+const role = role_list.reduce((pre, cur) => {  
     return pre | cur  
 })  
   
-  
-_/\*\*  
-_ _\*_ _前端判断  
-_ _\*/  
-_if (_role_ & _INSERT_) {  
-    _console_.log("有新增权限")  
+// 前端判断
+if (role & INSERT) {  
+    console_.log("有新增权限")  
 } else {  
-    _console_.log("无新增权限")  
+    console.log("无新增权限")  
 }
+```

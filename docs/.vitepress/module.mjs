@@ -1,34 +1,35 @@
 // 前端相关文章
-export const MODULE_FRONT_COMMON = [
-    { text: '富强明主文明和谐', link: '/mds/front/富强明主文明和谐/' },
-    { text: 'Vite反向代理', link: '/mds/front/Vite反向代理/' },
-    { text: 'GitCommit最佳实践', link: '/mds/front/GitCommit最佳实践/' },
-    { text: 'Husky', link: '/mds/front/Husky/' },
+export const MODULE_FRONT_OTHER = [
+    { text: '富强明主文明和谐', link: '/mds/front/Other/富强明主文明和谐/' },
+    { text: 'Vite反向代理', link: '/mds/front/Other/Vite反向代理/' },
+    { text: 'Vite中使用Mock', link: '/mds/front/Other/Vite中使用Mock/' },
 
-    { text: 'VsCode中的Extensions.json', link: '/mds/front/VsCode中的Extensions.json/' },
-    { text: '前端代码规范', link: '/mds/front/前端代码规范/' },
-    { text: 'Flutter卡在assembledebug', link: '/mds/front/Flutter卡在assembleDebug/' },
-    { text: 'OpenSSL3.0报错', link: '/mds/front/OpenSSL3.0报错/' },
+    { text: 'GitCommit最佳实践', link: '/mds/front/Other/GitCommit最佳实践/' },
+    { text: 'Husky', link: '/mds/front/Other/Husky/' },
 
-    { text: '编译OnlyOffice', link: '/mds/front/编译OnlyOffice/' },
-    { text: '编译V8', link: '/mds/front/编译V8/' },
-    { text: '编译Chromium', link: '/mds/front/编译Chromium/' },
+    { text: 'VsCode中的Extensions.json', link: '/mds/front/Other/VsCode中的Extensions.json/' },
+    { text: '前端代码规范', link: '/mds/front/Other/前端代码规范/' },
+    { text: 'Flutter卡在assembledebug', link: '/mds/front/Other/Flutter卡在assembleDebug/' },
+    { text: 'OpenSSL3.0报错', link: '/mds/front/Other/OpenSSL3.0报错/' },
 
-    { text: '在线写代码', link: '/mds/front/在线写代码/' },
+    { text: '编译OnlyOffice', link: '/mds/front/Other/编译OnlyOffice/' },
+    { text: '编译V8', link: '/mds/front/Other/编译V8/' },
+    { text: '编译Chromium', link: '/mds/front/Other/编译Chromium/' },
+
+    { text: '在线写代码', link: '/mds/front/Other/在线写代码/' },
 ]
 
 // VUE相关文章
 export const MODULE_FRONT_VUE = [
-    { text: 'Vue3一行代码显示弹窗', link: '/mds/front/Vue3一行代码显示弹窗/' },
-    { text: 'Vue3异步组件', link: '/mds/front/Vue3异步组件/' },
-    { text: 'Vite中使用Mock', link: '/mds/front/Vite中使用Mock/' },
+    { text: 'Vue3一行代码显示弹窗', link: '/mds/front/Vue/Vue3一行代码显示弹窗/' },
+    { text: 'Vue3异步组件', link: '/mds/front/Vue/Vue3异步组件/' },
 
-    { text: 'ElementPlus多表单验证', link: '/mds/front/ElementPlus多表单验证/' },
-    { text: 'ElementPlus表格列合并', link: '/mds/front/ElementPlus表格列合并/' },
-    { text: 'ElementPlus复选框单选', link: '/mds/front/ElementPlus复选框单选/' },
+    { text: 'ElementPlus多表单验证', link: '/mds/front/Vue/ElementPlus多表单验证/' },
+    { text: 'ElementPlus表格列合并', link: '/mds/front/Vue/ElementPlus表格列合并/' },
+    { text: 'ElementPlus复选框单选', link: '/mds/front/Vue/ElementPlus复选框单选/' },
 
-    { text: '前端使用DockerFile部署', link: '/mds/front/前端使用DockerFile部署/' },
-    { text: '本地部署ElementPlusDoc', link: '/mds/front/本地部署ElementPlusDoc/' },
+    { text: '前端使用DockerFile部署', link: '/mds/front/Vue/前端使用DockerFile部署/' },
+    { text: '本地部署ElementPlusDoc', link: '/mds/front/Vue/本地部署ElementPlusDoc/' },
 ]
 
 // REACT相关文章
@@ -54,8 +55,10 @@ export const MODULE_FRONT_REACT = [
     { text: 'React副作用进行网络请求', link: '/mds/front/React/React副作用进行网络请求/' },
     { text: 'React获取真实Dom', link: '/mds/front/React/React获取真实Dom/' },
 
-    { text: 'React路由', link: '/mds/front/React/React路由/' },
     { text: 'React路由编程式导航', link: '/mds/front/React/React路由编程式导航/' },
+    { text: 'React路由', link: '/mds/front/React/React路由/' },
+
+    { text: 'React全局状态管理', link: '/mds/front/React/React全局状态管理/' },
 ]
 
 // THREE_JS相关文章
@@ -75,16 +78,18 @@ export const MODULE_FRONT_THREE = [
     { text: '多个物体的包围盒', link: '/mds/front/ThreeJs/多个物体的包围盒/' },
 ]
 
+// JAVA相关文章
+export const MODULE_BACK_JAVA = [
+    { text: 'Java8的新特性', link: '/mds/back/Java/Java8的新特性/' },
+    { text: 'Maven安装', link: '/mds/back/Java/Maven安装/' },
+]
 
 // 后端相关文章
-export const MODULE_BACK_COMMON = [
-    { text: 'Linux常用操作', link: '/mds/back/Linux常用操作/' },
+export const MODULE_BACK_OTHER = [
+    { text: 'Linux常用操作', link: '/mds/back/Other/Linux常用操作/' },
 
-    { text: 'Java8的新特性', link: '/mds/back/Java8的新特性/' },
-    { text: 'Maven安装', link: '/mds/back/Maven安装/' },
-
-    { text: 'Vmware安装', link: '/mds/back/Vmware安装/' },
-    { text: 'Docker直播推流', link: '/mds/back/Docker直播推流/' },
+    { text: 'Vmware安装', link: '/mds/back/Other/Vmware安装/' },
+    { text: 'Docker直播推流', link: '/mds/back/Other/Docker直播推流/' },
 ]
 
 // 算法与数据结构
@@ -104,6 +109,8 @@ export const MODULE_AI_COMMON = [
 
 // 关于自己的心得相关文章
 export const MODULE_ME_COMMON = [
+    { text: '为什么要写博客', link: '/mds/me/为什么要写博客/' },
+    { text: '我的简历', link: '/mds/me/我的简历/' },
     { text: '关于创业', link: '/mds/me/关于创业/' },
     { text: '魔方还原', link: '/mds/me/魔方还原/' },
 ]

@@ -1,13 +1,6 @@
----
-title: "撤销重做优雅的解决方案"
-date: "2023-11-20"
-categories: 
-  - "算法"
----
-
 ### 简单
 
-```
+```vue
 <script setup>
 import { ref, shallowReactive } from 'vue'
 
@@ -53,7 +46,7 @@ function clone(circles) {
 
 useHistory.js
 
-```
+```js
 /**
  * 命令模式涉及将所有操作（如添加、删除、修改）封装为命令对象。每个命令对象需要具备执行（execute）和撤销（undo）方法。
  * class Command {
@@ -118,7 +111,7 @@ export default useHistory
 
 index.vue
 
-```
+```vue
 <script setup>
 import { ref } from 'vue'
 import useHistory from './useHistory'

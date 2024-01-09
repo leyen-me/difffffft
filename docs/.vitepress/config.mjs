@@ -1,5 +1,17 @@
 import { defineConfig } from 'vitepress'
-import { MODULE_FRONT_COMMON, MODULE_FRONT_VUE, MODULE_BACK_COMMON, MODULE_ARITHMETIC_COMMON, MODULE_AI_COMMON, MODULE_ME_COMMON, MODULE_FRONT_REACT, MODULE_FRONT_THREE } from "./module.mjs"
+import {
+    MODULE_FRONT_OTHER,
+    MODULE_FRONT_VUE,
+    MODULE_FRONT_REACT,
+    MODULE_FRONT_THREE,
+
+    MODULE_BACK_JAVA,
+    MODULE_BACK_OTHER,
+
+    MODULE_ARITHMETIC_COMMON,
+    MODULE_AI_COMMON,
+    MODULE_ME_COMMON
+} from "./module.mjs"
 
 
 // https://vitepress.dev/reference/site-config
@@ -13,10 +25,21 @@ export default defineConfig({
                 href: '/css/font.css',
                 rel: 'stylesheet'
             }
+        ],
+        [
+            'link',
+            {
+                href: '/images/logo-with-shadow.png',
+                type: "image/png",
+                rel: 'icon'
+            }
         ]
     ],
     outDir: '../dist',
     appearance: 'dark',
+    sitemap: {
+        hostname: 'https://difffffft.com'
+    },
     // https://vitepress.dev/reference/default-theme-config
     themeConfig: {
         prev: 'false',
@@ -42,11 +65,12 @@ export default defineConfig({
 
         nav: [
             { text: '博客', link: MODULE_ME_COMMON[0].link, activeMatch: '/mds/me/(.*)' },
+            { text: '简历', link: MODULE_ME_COMMON[1].link, activeMatch: '/mds/me/(.*)' },
             {
                 text: '文档',
                 items: [
-                    { text: '前端', link: MODULE_FRONT_COMMON[0].link, activeMatch: '/mds/front/(.*)' },
-                    { text: '后端', link: MODULE_BACK_COMMON[0].link, activeMatch: '/mds/back/(.*)' },
+                    { text: '前端', link: MODULE_FRONT_VUE[0].link, activeMatch: '/mds/front/(.*)' },
+                    { text: '后端', link: MODULE_BACK_OTHER[0].link, activeMatch: '/mds/back/(.*)' },
                     { text: '算法', link: MODULE_ARITHMETIC_COMMON[0].link, activeMatch: '/mds/arithmetic/(.*)' },
                     { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/mds/ai/(.*)' },
                 ],
@@ -58,9 +82,7 @@ export default defineConfig({
             '/mds/me/': {
                 items: MODULE_ME_COMMON
             },
-            '/mds/back/': {
-                items: MODULE_BACK_COMMON
-            },
+
             '/mds/arithmetic/': {
                 items: MODULE_ARITHMETIC_COMMON
             },
@@ -70,13 +92,8 @@ export default defineConfig({
             '/mds/front/': {
                 items: [
                     {
-                        text: '公共',
-                        collapsed: false,
-                        items: MODULE_FRONT_COMMON
-                    },
-                    {
                         text: 'Vue',
-                        collapsed: true,
+                        collapsed: false,
                         items: MODULE_FRONT_VUE
                     },
                     {
@@ -88,6 +105,25 @@ export default defineConfig({
                         text: 'ThreeJs',
                         collapsed: true,
                         items: MODULE_FRONT_THREE
+                    },
+                    {
+                        text: 'Other',
+                        collapsed: true,
+                        items: MODULE_FRONT_OTHER
+                    },
+                ]
+            },
+            '/mds/back/': {
+                items: [
+                    {
+                        text: 'Java',
+                        collapsed: false,
+                        items: MODULE_BACK_JAVA
+                    },
+                    {
+                        text: 'Other',
+                        collapsed: true,
+                        items: MODULE_BACK_OTHER
                     },
                 ]
             },

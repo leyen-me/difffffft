@@ -165,7 +165,7 @@ categories:
 
 基本思路是创建一个`visitor`访问器对象，提供一些接受不同节点类型的方法。
 
-```
+```ts
 var visitor = {
     NumberLiteral() {},
     CallExpression() {},
@@ -176,7 +176,7 @@ var visitor = {
 
 为了能让这些方法更有用，我们会传入两个参数，当前遍历到的节点，以及它的父节点。
 
-```
+```ts
 var visitor = {
     NumberLiteral(node, parent) {},
     CallExpression(node, parent) {},
@@ -213,7 +213,7 @@ var visitor = {
 
 为了支持这种情况，最终的访问器是这样的：
 
-```
+```ts
 var visitor = {
     NumberLiteral: {
         enter(node, parent) {},
@@ -258,7 +258,7 @@ var visitor = {
 
 函数接收一个代码字符串为入参，我们要做两件事：
 
-```
+```ts
 function tokenizer(input) {
     // `current`变量就像一个游标，跟踪我们在代码中当前的位置
     let current = 0;
@@ -381,7 +381,7 @@ function tokenizer(input) {
 
 定义一个`parser`函数，接收`token`列表作为参数：
 
-```
+```ts
 function parser(tokens) {
     // 同样的，我们维护一个`current`变量作为游标
     let current = 0;
@@ -490,7 +490,7 @@ function parser(tokens) {
 
 到这里我们已经有`AST`了，我们想能通过访问器来访问不同类型的节点。我们需要能够在遇到匹配类型的节点时调用访问器上的方法。
 
-```
+```ts
 traverse(ast, {
      Program: {
        enter(node, parent) {
@@ -523,7 +523,7 @@ traverse(ast, {
 
 所以我们定义一个`traverser`函数，接收一个`AST`和一个访问器，内部还会再定义两个函数...
 
-```
+```ts
 function traverser(ast, visitor) {
     // `traverseArray`函数用来遍历数组，里面会调用下面定义的`traverseNode`函数
     function traverseArray(array, parent) {
@@ -574,7 +574,7 @@ function traverser(ast, visitor) {
 
 接下来，转换器（transformer），它会把我们构建的`AST`，再加上一个访问器`visitor`，一起传给`traverser`函数，然后返回一个新的`AST`。
 
-```
+```md
 ----------------------------------------------------------------------------
    原 AST                           |   转换后的 AST
 ----------------------------------------------------------------------------
@@ -615,7 +615,7 @@ function traverser(ast, visitor) {
 
 （译者注：要理解下面这个函数，还是先要搞清楚从旧的到新的都做了哪些转换，回到上面的对比，可以看到`CallExpression`节点的`type`没变，但是把`name`属性修改成了`callee`，另外参数列表由`params`变成了`arguments`，最后如果`CallExpression`节点的父节点不是`CallExpression`节点的话那么会创建一个`ExpressionStatement`节点来包裹，所以转换过程是这样的，我们首先创建一个新的`AST`根节点，但是我们遍历的是旧的`AST`，所以怎么能在新的`AST`上添加节点呢，可以通过在旧的`AST`节点上创建一个属性来引用新的`AST`上的列表属性，这样就可以在遍历旧的树时往新的树的列表里添加节点。）
 
-```
+```ts
 function transformer(ast) {
     // 新AST，和之前的AST一样，也要有一个Program节点
     let newAst = {
@@ -695,7 +695,7 @@ function transformer(ast) {
 
 我们的代码生成器会递归的调用自己，把树中的每个节点都打印到一个巨大的字符里。
 
-```
+```ts
 function codeGenerator(node) {
     // 我们将按节点类型进行分别处理
     switch (node.type) {
@@ -744,7 +744,7 @@ function codeGenerator(node) {
 
 最后让我们来创建一个`compiler`函数，在这个函数里把上面的所有流程串起来：
 
-```
+```ts
 1. input  => tokenizer   => tokens
 2. tokens => parser      => ast
 3. ast    => transformer => newAst
@@ -764,7 +764,7 @@ function compiler(input) {
 
 现在，让我们把上面所有的函数导出：
 
-```
+```ts
 module.exports = {
     tokenizer,
     parser,

@@ -13,7 +13,7 @@ categories:
 
 ### 2.安装依赖
 
-```
+```sh
 protobuf
 transformers==4.27.1
 cpm_kernels
@@ -26,11 +26,11 @@ accelerate
 
 注意torch要安装CUDA版本的，也就是英伟达优化过的库。
 
-```
+```sh
 https://download.pytorch.org/whl/cu118/torch-2.1.2%2Bcu118-cp38-cp38-win_amd64.whl
 ```
 
-```
+```py
 import torch
 
 # 打印结果为True，表示优化过的
@@ -39,7 +39,7 @@ print(torch.cuda.is_available())
 
 ### 3.编写代码开始运行
 
-```
+```py
 import os
 import platform
 import signal
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
 ### 4.接入FastApi，提供服务
 
-```
+```py
 from fastapi import FastAPI, Request
 from transformers import AutoTokenizer, AutoModel
 import uvicorn, json, datetime
