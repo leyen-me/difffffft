@@ -76,6 +76,7 @@ export const MODULE_FRONT_THREE = [
     { text: '法向量辅助器', link: '/mds/front/ThreeJs/法向量辅助器/' },
     { text: '包围盒辅助器', link: '/mds/front/ThreeJs/包围盒辅助器/' },
     { text: '多个物体的包围盒', link: '/mds/front/ThreeJs/多个物体的包围盒/' },
+    { text: '光照和阴影投射', link: '/mds/front/ThreeJs/光照和阴影投射/' },
 ]
 
 // JAVA相关文章

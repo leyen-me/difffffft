@@ -54,7 +54,7 @@ export default defineConfig({
             provider: 'local'
         },
         footer: {
-            message: 'Released under the MIT License.',
+            message: '蜀ICP备2021033158号',
             copyright: 'Copyright © 2024-present DIFFFFFFT'
         },
         docFooter: {
@@ -71,7 +71,7 @@ export default defineConfig({
                 text: '文档',
                 items: [
                     { text: '前端', link: MODULE_FRONT_VUE[0].link, activeMatch: '/mds/front/(.*)' },
-                    { text: '后端', link: MODULE_BACK_OTHER[0].link, activeMatch: '/mds/back/(.*)' },
+                    { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/mds/back/(.*)' },
                     { text: '算法', link: MODULE_ARITHMETIC_COMMON[0].link, activeMatch: '/mds/arithmetic/(.*)' },
                     { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/mds/ai/(.*)' },
                 ],
