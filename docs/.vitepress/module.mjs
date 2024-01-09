@@ -114,3 +114,8 @@ export const MODULE_ME_COMMON = [
     { text: '关于创业', link: '/mds/me/关于创业/' },
     { text: '魔方还原', link: '/mds/me/魔方还原/' },
 ]
+
+// 我的简历
+export const MODULE_RESUME = [
+    { text: '我的简历', link: '/mds/resume/' },
+]

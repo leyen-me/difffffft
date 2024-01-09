@@ -10,7 +10,8 @@ import {
 
     MODULE_ARITHMETIC_COMMON,
     MODULE_AI_COMMON,
-    MODULE_ME_COMMON
+    MODULE_ME_COMMON,
+    MODULE_RESUME
 } from "./module.mjs"
 
 
@@ -65,7 +66,7 @@ export default defineConfig({
 
         nav: [
             { text: '博客', link: MODULE_ME_COMMON[0].link, activeMatch: '/mds/me/(.*)' },
-            { text: '简历', link: MODULE_ME_COMMON[1].link, activeMatch: '/mds/me/(.*)' },
+            { text: '简历', link: MODULE_RESUME[0].link, activeMatch: '/mds/resume/' },
             {
                 text: '文档',
                 items: [
