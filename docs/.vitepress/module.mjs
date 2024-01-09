@@ -110,7 +110,6 @@ export const MODULE_AI_COMMON = [
 // 关于自己的心得相关文章
 export const MODULE_ME_COMMON = [
     { text: '为什么要写博客', link: '/mds/me/为什么要写博客/' },
-    { text: '我的简历', link: '/mds/me/我的简历/' },
     { text: '关于创业', link: '/mds/me/关于创业/' },
     { text: '魔方还原', link: '/mds/me/魔方还原/' },
 ]
