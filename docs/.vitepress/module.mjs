@@ -93,6 +93,16 @@ export const MODULE_BACK_OTHER = [
     { text: 'Docker直播推流', link: '/mds/back/Other/Docker直播推流/' },
 ]
 
+// MSYQL
+export const MODULE_BACK_MYSQL = [
+    { text: 'SQL语言基础', link: '/mds/back/MySql/SQL语言基础/' },
+    { text: '数据库系统', link: '/mds/back/MySql/数据库系统/' },
+    { text: 'MYSQL简介', link: '/mds/back/MySql/MYSQL简介/' },
+    { text: 'MYSQL安装', link: '/mds/back/MySql/MYSQL安装/' },
+    { text: 'MYSQL卸载', link: '/mds/back/MySql/MYSQL卸载/' },
+    { text: 'MYSQL图形化管理工具', link: '/mds/back/MySql/MYSQL图形化管理工具/' },
+]
+
 // 算法与数据结构
 export const MODULE_ARITHMETIC_COMMON = [
     { text: '编译器', link: '/mds/arithmetic/编译器/' },
@@ -112,6 +122,7 @@ export const MODULE_AI_COMMON = [
 export const MODULE_ME_COMMON = [
     { text: '为什么要写博客', link: '/mds/me/为什么要写博客/' },
     { text: '关于创业', link: '/mds/me/关于创业/' },
+    // { text: '抖音赚米分析', link: '/mds/me/抖音赚米分析/' },
     { text: '魔方还原', link: '/mds/me/魔方还原/' },
 ]
 

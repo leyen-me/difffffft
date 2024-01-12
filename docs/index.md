@@ -40,4 +40,8 @@ features:
     details: OpenAi反向代理工具
     link: https://github.com/difffffft/openai-proxy
     icon: 👍
+  - title: Threejs-Sokoban 
+    details: 基于Three制作的3D版推箱子
+    link: https://github.com/difffffft/threejs-sokoban
+    icon: 😂
 ---

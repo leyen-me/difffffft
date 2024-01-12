@@ -6,12 +6,14 @@ import {
     MODULE_FRONT_THREE,
 
     MODULE_BACK_JAVA,
+    MODULE_BACK_MYSQL,
     MODULE_BACK_OTHER,
 
     MODULE_ARITHMETIC_COMMON,
     MODULE_AI_COMMON,
     MODULE_ME_COMMON,
-    MODULE_RESUME
+
+    MODULE_RESUME,
 } from "./module.mjs"
 
 
@@ -120,6 +122,11 @@ export default defineConfig({
                         text: 'Java',
                         collapsed: false,
                         items: MODULE_BACK_JAVA
+                    },
+                    {
+                        text: 'MySql',
+                        collapsed: true,
+                        items: MODULE_BACK_MYSQL
                     },
                     {
                         text: 'Other',
