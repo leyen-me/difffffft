@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "DIFFFFFFT"
   text: "Web Developer"
-  tagline: 人们在寻找答案，而我在寻找问题
+  tagline: 见天地 见众生 见自己
   actions:
     - theme: brand
       text: 了解更多
