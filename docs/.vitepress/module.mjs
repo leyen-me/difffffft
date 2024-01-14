@@ -101,6 +101,10 @@ export const MODULE_BACK_MYSQL = [
     { text: 'MYSQL安装', link: '/mds/back/MySql/MYSQL安装/' },
     { text: 'MYSQL卸载', link: '/mds/back/MySql/MYSQL卸载/' },
     { text: 'MYSQL图形化管理工具', link: '/mds/back/MySql/MYSQL图形化管理工具/' },
+    { text: 'DDL数据库操作', link: '/mds/back/MySql/DDL数据库操作/' },
+    { text: 'DDL表操作', link: '/mds/back/MySql/DDL表操作/' },
+    { text: 'MYSQL数据类型', link: '/mds/back/MySql/MYSQL数据类型/' },
+    // p21
 ]
 
 // 算法与数据结构
