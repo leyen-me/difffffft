@@ -67,32 +67,32 @@ export default defineConfig({
         lastUpdatedText: '最后更新',
 
         nav: [
-            { text: '博客', link: MODULE_ME_COMMON[0].link, activeMatch: '/mds/me/(.*)' },
-            { text: '简历', link: MODULE_RESUME[0].link, activeMatch: '/mds/resume/' },
+            { text: '博客', link: MODULE_ME_COMMON[0].link, activeMatch: '/docs/me/(.*)' },
+            { text: '简历', link: MODULE_RESUME[0].link, activeMatch: '/docs/resume/' },
             {
                 text: '文档',
                 items: [
-                    { text: '前端', link: MODULE_FRONT_VUE[0].link, activeMatch: '/mds/front/(.*)' },
-                    { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/mds/back/(.*)' },
-                    { text: '算法', link: MODULE_ARITHMETIC_COMMON[0].link, activeMatch: '/mds/arithmetic/(.*)' },
-                    { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/mds/ai/(.*)' },
+                    { text: '前端', link: MODULE_FRONT_VUE[0].link, activeMatch: '/docs/front/(.*)' },
+                    { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/docs/back/(.*)' },
+                    { text: '算法', link: MODULE_ARITHMETIC_COMMON[0].link, activeMatch: '/docs/arithmetic/(.*)' },
+                    { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/docs/ai/(.*)' },
                 ],
             },
         ],
 
         // http://tool.pfan.cn/random
         sidebar: {
-            '/mds/me/': {
+            '/docs/me/': {
                 items: MODULE_ME_COMMON
             },
 
-            '/mds/arithmetic/': {
+            '/docs/arithmetic/': {
                 items: MODULE_ARITHMETIC_COMMON
             },
-            '/mds/ai/': {
+            '/docs/ai/': {
                 items: MODULE_AI_COMMON
             },
-            '/mds/front/': {
+            '/docs/front/': {
                 items: [
                     {
                         text: 'Vue',
@@ -116,7 +116,7 @@ export default defineConfig({
                     },
                 ]
             },
-            '/mds/back/': {
+            '/docs/back/': {
                 items: [
                     {
                         text: 'Java',
