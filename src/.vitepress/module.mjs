@@ -107,8 +107,13 @@ export const MODULE_BACK_MYSQL = [
     { text: 'DML数据操作', link: '/docs/back/MySql/DML数据操作/' },
     { text: 'MYSQL约束', link: '/docs/back/MySql/MYSQL约束/' },
     { text: '主键约束', link: '/docs/back/MySql/主键约束/' },
+
+    { text: 'MYSQL运算符', link: '/docs/back/MySql/MYSQL运算符/' },
     { text: 'DQL查询', link: '/docs/back/MySql/DQL查询/' },
-    // p21
+    { text: '聚合查询', link: '/docs/back/MySql/聚合查询/' },
+    { text: '分组查询', link: '/docs/back/MySql/分组查询/' },
+    { text: '分页查询', link: '/docs/back/MySql/分页查询/' },
+    // p52
 ]
 
 // 算法与数据结构
