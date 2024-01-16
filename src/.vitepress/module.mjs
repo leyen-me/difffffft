@@ -116,11 +116,33 @@ export const MODULE_BACK_MYSQL = [
     // p52
 ]
 
-// 算法与数据结构
-export const MODULE_ARITHMETIC_COMMON = [
-    { text: '编译器', link: '/docs/arithmetic/编译器/' },
-    { text: '撤销重做', link: '/docs/arithmetic/撤销重做/' },
-    { text: '二进制权限', link: '/docs/arithmetic/二进制权限/' },
+// 数据结构与算法
+export const MODULE_ARITHMETIC = [
+    {
+        text: '数组与链表',
+        collapsed: false,
+        items: [
+            { text: '数组', link: '/docs/arithmetic/数组与链表/数组/' },
+            { text: '链表', link: '/docs/arithmetic/数组与链表/链表/' },
+            { text: '列表', link: '/docs/arithmetic/数组与链表/列表/' },
+        ]
+    },
+    {
+        text: '栈与队列',
+        collapsed: true,
+        items: [
+            { text: '栈', link: '/docs/arithmetic/栈与队列/栈/' },
+        ]
+    },
+    {
+        text: 'Other',
+        collapsed: true,
+        items: [
+            { text: '编译器', link: '/docs/arithmetic/编译器/' },
+            { text: '撤销重做', link: '/docs/arithmetic/撤销重做/' },
+            { text: '二进制权限', link: '/docs/arithmetic/二进制权限/' },
+        ]
+    },
 ]
 
 // 人工智能
@@ -130,6 +152,9 @@ export const MODULE_AI_COMMON = [
     { text: '机器学习概述', link: '/docs/ai/机器学习概述/' },
     { text: '拟合问题', link: '/docs/ai/拟合问题/' },
 ]
+
+
+
 
 // 关于自己的心得相关文章
 export const MODULE_ME_COMMON = [

@@ -9,7 +9,8 @@ import {
     MODULE_BACK_MYSQL,
     MODULE_BACK_OTHER,
 
-    MODULE_ARITHMETIC_COMMON,
+    MODULE_ARITHMETIC,
+
     MODULE_AI_COMMON,
     MODULE_ME_COMMON,
 
@@ -74,7 +75,7 @@ export default defineConfig({
                 items: [
                     { text: '前端', link: MODULE_FRONT_VUE[0].link, activeMatch: '/docs/front/(.*)' },
                     { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/docs/back/(.*)' },
-                    { text: '算法', link: MODULE_ARITHMETIC_COMMON[0].link, activeMatch: '/docs/arithmetic/(.*)' },
+                    { text: '算法', link: MODULE_ARITHMETIC[0].items[0].link, activeMatch: '/docs/arithmetic/(.*)' },
                     { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/docs/ai/(.*)' },
                 ],
             },
@@ -85,9 +86,8 @@ export default defineConfig({
             '/docs/me/': {
                 items: MODULE_ME_COMMON
             },
-
             '/docs/arithmetic/': {
-                items: MODULE_ARITHMETIC_COMMON
+                items: MODULE_ARITHMETIC
             },
             '/docs/ai/': {
                 items: MODULE_AI_COMMON
