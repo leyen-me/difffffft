@@ -1,0 +1,1 @@
+import{_ as a}from"./lodash-3ffe41b4.js";import{f as i}from"./index-bf47055b.js";const m=r=>{const o=a.cloneDeep(r),e=i(a.cloneDeep(r));return{dataForm:e,reset:()=>{for(let t in e.value)e.value[t]=o[t]},assign:t=>{for(let n in o){const s=t[n];s==null?e.value[n]=o[n]:e.value[n]=s}}}};export{m as u};
