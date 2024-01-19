@@ -16,11 +16,14 @@ export const MODULE_FRONT_OTHER = [
     { text: '编译V8', link: '/docs/front/Other/编译V8/' },
     { text: '编译Chromium', link: '/docs/front/Other/编译Chromium/' },
 
+    { text: 'Npm换源', link: '/docs/front/Other/Npm换源/' },
+
     { text: '在线写代码', link: '/docs/front/Other/在线写代码/' },
 ]
 
 // VUE相关文章
 export const MODULE_FRONT_VUE = [
+    { text: 'ElementPlus自定义ICON', link: '/docs/front/Vue/ElementPlus自定义ICON/' },
     { text: 'Vue3一行代码显示弹窗', link: '/docs/front/Vue/Vue3一行代码显示弹窗/' },
     { text: 'Vue3异步组件', link: '/docs/front/Vue/Vue3异步组件/' },
 
