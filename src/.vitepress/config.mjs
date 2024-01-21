@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
+
 import {
     MODULE_FRONT_OTHER,
     MODULE_FRONT_VUE,
@@ -15,13 +17,117 @@ import {
     MODULE_ME_COMMON,
 
     MODULE_RESUME,
+    MODULE_SELF_STUDU
 } from "./module.mjs"
+
+const customElements = [
+	'mjx-container',
+    'mjx-assistive-mml',
+	'math',
+	'maction',
+	'maligngroup',
+	'malignmark',
+	'menclose',
+	'merror',
+	'mfenced',
+	'mfrac',
+	'mi',
+	'mlongdiv',
+	'mmultiscripts',
+	'mn',
+	'mo',
+	'mover',
+	'mpadded',
+	'mphantom',
+	'mroot',
+	'mrow',
+	'ms',
+	'mscarries',
+	'mscarry',
+	'mscarries',
+	'msgroup',
+	'mstack',
+	'mlongdiv',
+	'msline',
+	'mstack',
+	'mspace',
+	'msqrt',
+	'msrow',
+	'mstack',
+	'mstack',
+	'mstyle',
+	'msub',
+	'msup',
+	'msubsup',
+	'mtable',
+	'mtd',
+	'mtext',
+	'mtr',
+	'munder',
+	'munderover',
+	'semantics',
+	'math',
+	'mi',
+	'mn',
+	'mo',
+	'ms',
+	'mspace',
+	'mtext',
+	'menclose',
+	'merror',
+	'mfenced',
+	'mfrac',
+	'mpadded',
+	'mphantom',
+	'mroot',
+	'mrow',
+	'msqrt',
+	'mstyle',
+	'mmultiscripts',
+	'mover',
+	'mprescripts',
+	'msub',
+	'msubsup',
+	'msup',
+	'munder',
+	'munderover',
+	'none',
+	'maligngroup',
+	'malignmark',
+	'mtable',
+	'mtd',
+	'mtr',
+	'mlongdiv',
+	'mscarries',
+	'mscarry',
+	'msgroup',
+	'msline',
+	'msrow',
+	'mstack',
+	'maction',
+	'semantics',
+	'annotation',
+	'annotation-xml',
+];
+
 
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "DIFFFFFFT",
     description: "designer devlopment",
+    markdown: {
+        config: (md) => {
+            md.use(mathjax3)
+        }
+    },
+    vue: {
+        template: {
+            compilerOptions: {
+                isCustomElement: (tag) => customElements.includes(tag),
+            },
+        },
+    },
     head: [
         [
             'link',
@@ -37,7 +143,7 @@ export default defineConfig({
                 type: "image/png",
                 rel: 'icon'
             }
-        ]
+        ],
     ],
     outDir: '../dist',
     appearance: 'dark',
@@ -77,6 +183,7 @@ export default defineConfig({
                     { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/docs/back/(.*)' },
                     { text: '算法', link: MODULE_ARITHMETIC[0].items[0].link, activeMatch: '/docs/arithmetic/(.*)' },
                     { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/docs/ai/(.*)' },
+                    { text: '自考', link: MODULE_SELF_STUDU[0].link, activeMatch: '/docs/self-study/(.*)' },
                 ],
             },
         ],
@@ -135,6 +242,9 @@ export default defineConfig({
                     },
                 ]
             },
+            '/docs/self-study/': {
+                items: MODULE_SELF_STUDU
+            }
         },
 
         socialLinks: [

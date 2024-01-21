@@ -5,6 +5,7 @@
     "preview": "vitepress preview src --host 0.0.0.0"
   },
   "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.0.0-rc.33"
   }
 }

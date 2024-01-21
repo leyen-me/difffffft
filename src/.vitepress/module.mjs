@@ -172,3 +172,28 @@ export const MODULE_ME_COMMON = [
 export const MODULE_RESUME = [
     { text: '我的简历', link: '/docs/resume/' },
 ]
+
+export const MODULE_SELF_STUDU = [
+    { text: '自学考试', link: '/docs/self-study/' },
+    {
+        text: '高等数学',
+        collapsed: true,
+        items: [
+            { text: '实数', link: '/docs/self-study/高等数学/实数/' },
+            { text: '代数式', link: '/docs/self-study/高等数学/代数式/' },
+        ]
+    },
+    {
+        text: '马克思主义基本原理概论',
+        collapsed: true,
+        items: [
+            { text: '物质世界及其发展规律', link: '/docs/self-study/马克思主义基本原理概论/物质世界及其发展规律/' },
+            { text: '认识本质及其规律', link: '/docs/self-study/马克思主义基本原理概论/认识本质及其规律/' },
+            { text: '人类社会及其发展规律', link: '/docs/self-study/马克思主义基本原理概论/人类社会及其发展规律/' },
+            { text: '资本主义制度的形成及其本质', link: '/docs/self-study/马克思主义基本原理概论/资本主义制度的形成及其本质/' },
+            { text: '资本主义的发展及其趋势', link: '/docs/self-study/马克思主义基本原理概论/资本主义的发展及其趋势/' },
+            { text: '社会主义发展及其规律', link: '/docs/self-study/马克思主义基本原理概论/社会主义发展及其规律/' },
+            { text: '共产主义是人类最崇高的社会理想', link: '/docs/self-study/马克思主义基本原理概论/共产主义是人类最崇高的社会理想/' },
+        ]
+    },
+]
