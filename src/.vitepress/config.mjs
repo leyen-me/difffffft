@@ -183,7 +183,7 @@ export default defineConfig({
                     { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/docs/back/(.*)' },
                     { text: '算法', link: MODULE_ARITHMETIC[0].items[0].link, activeMatch: '/docs/arithmetic/(.*)' },
                     { text: '人工智能', link: MODULE_AI_COMMON[0].link, activeMatch: '/docs/ai/(.*)' },
-                    { text: '自考', link: MODULE_SELF_STUDU[0].link, activeMatch: '/docs/self-study/(.*)' },
+                    { text: '提升', link: MODULE_SELF_STUDU[0].link, activeMatch: '/docs/self-study/(.*)' },
                 ],
             },
         ],
