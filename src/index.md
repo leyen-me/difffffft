@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 了解更多
-      link: http://difffffft.com/portfolio/search/#/
+      link: /docs/resume/
     - theme: alt
       text: 在 Github 上查看
       link: https://github.com/difffffft

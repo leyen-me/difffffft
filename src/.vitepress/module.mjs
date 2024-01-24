@@ -1,5 +1,8 @@
 // 前端相关文章
 export const MODULE_FRONT_OTHER = [
+    { text: 'MarkDown语法', link: '/docs/front/Other/MarkDown语法/' },
+    { text: '撤销重做', link: '/docs/front/Other/撤销重做/' },
+
     { text: '富强明主文明和谐', link: '/docs/front/Other/富强明主文明和谐/' },
     { text: 'Vite反向代理', link: '/docs/front/Other/Vite反向代理/' },
     { text: 'Vite中使用Mock', link: '/docs/front/Other/Vite中使用Mock/' },
@@ -49,7 +52,7 @@ export const MODULE_FRONT_REACT = [
     { text: 'React简单插槽', link: '/docs/front/React/React简单插槽/' },
     { text: 'React插槽', link: '/docs/front/React/React插槽/' },
     { text: 'React组件参数默认值', link: '/docs/front/React/React组件参数默认值/' },
-    { text: '跨组件通信', link: '/docs/front/React/跨组件通信/' },
+    { text: 'React跨组件通信', link: '/docs/front/React/跨组件通信/' },
 
     { text: 'React动态Class', link: '/docs/front/React/React动态Class/' },
     { text: 'React获取DOM元素', link: '/docs/front/React/React获取DOM元素/' },
@@ -91,6 +94,7 @@ export const MODULE_BACK_JAVA = [
 
 // 后端相关文章
 export const MODULE_BACK_OTHER = [
+    { text: '二进制权限', link: '/docs/back/Other/二进制权限/' },
     { text: 'Linux常用操作', link: '/docs/back/Other/Linux常用操作/' },
 
     { text: 'Vmware安装', link: '/docs/back/Other/Vmware安装/' },
@@ -120,81 +124,12 @@ export const MODULE_BACK_MYSQL = [
     // p52
 ]
 
-// 数据结构与算法
-export const MODULE_ARITHMETIC = [
-    {
-        text: '数组与链表',
-        collapsed: false,
-        items: [
-            { text: '数组', link: '/docs/arithmetic/数组与链表/数组/' },
-            { text: '链表', link: '/docs/arithmetic/数组与链表/链表/' },
-            { text: '列表', link: '/docs/arithmetic/数组与链表/列表/' },
-        ]
-    },
-    {
-        text: '栈与队列',
-        collapsed: true,
-        items: [
-            { text: '栈', link: '/docs/arithmetic/栈与队列/栈/' },
-        ]
-    },
-    {
-        text: 'Other',
-        collapsed: true,
-        items: [
-            { text: '编译器', link: '/docs/arithmetic/编译器/' },
-            { text: '撤销重做', link: '/docs/arithmetic/撤销重做/' },
-            { text: '二进制权限', link: '/docs/arithmetic/二进制权限/' },
-        ]
-    },
-]
-
-// 人工智能
-export const MODULE_AI_COMMON = [
-    { text: '开源大模型', link: '/docs/ai/开源大模型/' },
-
-    { text: '机器学习概述', link: '/docs/ai/机器学习概述/' },
-    { text: '拟合问题', link: '/docs/ai/拟合问题/' },
-]
-
-
-
-
 // 关于自己的心得相关文章
 export const MODULE_ME_COMMON = [
-    { text: 'MarkDown语法', link: '/docs/me/MarkDown语法/' },
-    { text: '关于创业', link: '/docs/me/关于创业/' },
-    // { text: '抖音赚米分析', link: '/docs/me/抖音赚米分析/' },
-    { text: '魔方还原', link: '/docs/me/魔方还原/' },
     { text: '为什么要写博客', link: '/docs/me/为什么要写博客/' },
 ]
 
 // 我的简历
 export const MODULE_RESUME = [
     { text: '我的简历', link: '/docs/resume/' },
-]
-
-export const MODULE_SELF_STUDU = [
-    { text: '提升', link: '/docs/self-study/高等数学/实数/' },
-    {
-        text: '高等数学',
-        collapsed: true,
-        items: [
-            { text: '实数', link: '/docs/self-study/高等数学/实数/' },
-            { text: '代数式', link: '/docs/self-study/高等数学/代数式/' },
-        ]
-    },
-    // {
-    //     text: '马克思主义基本原理概论',
-    //     collapsed: true,
-    //     items: [
-    //         { text: '物质世界及其发展规律', link: '/docs/self-study/马克思主义基本原理概论/物质世界及其发展规律/' },
-    //         { text: '认识本质及其规律', link: '/docs/self-study/马克思主义基本原理概论/认识本质及其规律/' },
-    //         { text: '人类社会及其发展规律', link: '/docs/self-study/马克思主义基本原理概论/人类社会及其发展规律/' },
-    //         { text: '资本主义制度的形成及其本质', link: '/docs/self-study/马克思主义基本原理概论/资本主义制度的形成及其本质/' },
-    //         { text: '资本主义的发展及其趋势', link: '/docs/self-study/马克思主义基本原理概论/资本主义的发展及其趋势/' },
-    //         { text: '社会主义发展及其规律', link: '/docs/self-study/马克思主义基本原理概论/社会主义发展及其规律/' },
-    //         { text: '共产主义是人类最崇高的社会理想', link: '/docs/self-study/马克思主义基本原理概论/共产主义是人类最崇高的社会理想/' },
-    //     ]
-    // },
 ]
