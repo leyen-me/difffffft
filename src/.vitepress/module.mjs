@@ -126,6 +126,7 @@ export const MODULE_BACK_MYSQL = [
 
 // 关于自己的心得相关文章
 export const MODULE_ME_COMMON = [
+    { text: '平凡的世界', link: '/docs/me/平凡的世界/' },
     { text: '为什么要写博客', link: '/docs/me/为什么要写博客/' },
 ]
 
