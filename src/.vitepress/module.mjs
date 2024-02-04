@@ -121,7 +121,11 @@ export const MODULE_BACK_MYSQL = [
     { text: '聚合查询', link: '/docs/back/MySql/聚合查询/' },
     { text: '分组查询', link: '/docs/back/MySql/分组查询/' },
     { text: '分页查询', link: '/docs/back/MySql/分页查询/' },
-    // p52
+
+    { text: 'InsertIntoSelect', link: '/docs/back/MySql/InsertIntoSelect/' },
+    { text: '多表关系', link: '/docs/back/MySql/多表关系/' },
+    { text: '外键约束', link: '/docs/back/MySql/外键约束/' },
+    { text: '多表联合查询', link: '/docs/back/MySql/多表联合查询/' },
 ]
 
 // 关于自己的心得相关文章

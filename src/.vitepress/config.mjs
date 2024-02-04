@@ -144,7 +144,7 @@ export default defineConfig({
     outDir: '../dist',
     appearance: 'dark',
     sitemap: {
-        hostname: 'https://difffffft.com'
+        hostname: 'http://difffffft.com'
     },
     
     // https://vitepress.dev/reference/default-theme-config
@@ -161,7 +161,7 @@ export default defineConfig({
         },
         footer: {
             message: '蜀ICP备2021033158号',
-            copyright: 'Copyright © 2024-present DIFFFFFFT'
+            copyright: '友情链接: <a href="https://liangnianban.com/" target="_blank">XueYa</a> <a href="https://beaumon.github.io/" target="_blank">Beaumon</a>'
         },
         docFooter: {
             prev: '上一篇',
