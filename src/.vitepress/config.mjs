@@ -16,6 +16,8 @@ import {
     MODULE_RESUME,
 } from "./module.mjs"
 
+import 摘抄列表 from '../docs/摘抄'
+
 const customElements = [
     'mjx-container',
     'mjx-assistive-mml',
@@ -160,7 +162,7 @@ export default defineConfig({
             provider: 'local'
         },
         footer: {
-            message: '蜀ICP备2021033158号',
+            message: '<a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2021033158号</a>',
             copyright: '友情链接: <a href="https://liangnianban.com/" target="_blank">XueYa</a> <a href="https://beaumon.github.io/" target="_blank">Beaumon</a>'
         },
         docFooter: {
@@ -173,6 +175,7 @@ export default defineConfig({
         nav: [
             { text: '博客', link: MODULE_ME_COMMON[0].link, activeMatch: '/docs/me/(.*)' },
             { text: '简历', link: MODULE_RESUME[0].link, activeMatch: '/docs/resume/' },
+            { text: '摘抄', link: 摘抄列表[0].link, activeMatch: '/docs/摘抄/' },
             {
                 text: '文档',
                 items: [
@@ -183,6 +186,9 @@ export default defineConfig({
             },
         ],
         sidebar: {
+            '/docs/摘抄/': {
+                items: 摘抄列表
+            },
             '/docs/me/': {
                 items: MODULE_ME_COMMON
             },

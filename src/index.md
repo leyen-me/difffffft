@@ -7,8 +7,8 @@ hero:
   tagline: 见天地 见众生 见自己
   actions:
     - theme: brand
-      text: 了解更多
-      link: /docs/resume/
+      text: 常用工具
+      link: /docs/网站/
     - theme: alt
       text: 在 Github 上查看
       link: https://github.com/difffffft
