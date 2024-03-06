@@ -14,6 +14,7 @@ import {
     MODULE_ME_COMMON,
 
     MODULE_RESUME,
+    MODULE_FRONT_VUE_INTERVIEW
 } from "./module.mjs"
 
 import 摘抄列表 from '../docs/摘抄'
@@ -137,6 +138,13 @@ export default defineConfig({
         [
             'link',
             {
+                href: '/css/common.css',
+                rel: 'stylesheet'
+            }
+        ],
+        [
+            'link',
+            {
                 href: '/images/logo-with-shadow.png',
                 type: "image/png",
                 rel: 'icon'
@@ -181,11 +189,15 @@ export default defineConfig({
                 items: [
                     { text: '前端', link: MODULE_FRONT_VUE[0].link, activeMatch: '/docs/front/(.*)' },
                     { text: '后端', link: MODULE_BACK_JAVA[0].link, activeMatch: '/docs/back/(.*)' },
+                    { text: '面试', link: MODULE_FRONT_VUE_INTERVIEW[0].items[0].link, activeMatch: '/docs/前端/面试/(.*)' },
                     { text: '算法', link: "https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md" },
                 ],
             },
         ],
         sidebar: {
+            '/docs/前端/面试': {
+                items: MODULE_FRONT_VUE_INTERVIEW
+            },
             '/docs/摘抄/': {
                 items: 摘抄列表
             },

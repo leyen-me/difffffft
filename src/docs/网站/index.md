@@ -14,6 +14,10 @@
   - **Description:** AI社区
   - **Link:** [https://huggingface.co](https://huggingface.co)
 
+- **ModelScope**
+  - **Description:** 魔搭社区
+  - **Link:** [https://modelscope.cn](https://modelscope.cn)
+
 - **掘金**
   - **Description:** 优质干货社区
   - **Link:** [https://juejin.cn/](https://juejin.cn/)
@@ -73,6 +77,10 @@
 - **CocosCreator**
   - **Description:** 2D游戏开发
   - **Link:** [http://docs.cocos.com/creator/manual/zh/](http://docs.cocos.com/creator/manual/zh/)
+
+- **Ollama**
+  - **Description:** 大模型消费级电脑部署
+  - **Link:** [https://ollama.com/](https://ollama.com/)
 
 ### UI组件库
 
@@ -240,6 +248,9 @@
   - **Description:** 免费的2D游戏素材库
   - **Link:** [https://www.aigei.com/game2d/](https://www.aigei.com/game2d/)
 
+- **即刻素材**
+  - **Description:** 无需注册，无需登录，优质素材
+  - **Link:** [https://www.jikescw.com/](https://www.jikescw.com/)
 
 ## 常用
 

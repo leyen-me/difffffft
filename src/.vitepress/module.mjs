@@ -130,10 +130,25 @@ export const MODULE_BACK_MYSQL = [
 
 // 关于自己的心得相关文章
 export const MODULE_ME_COMMON = [
+    { text: 'Window11专业版激活', link: '/docs/me/Window11专业版激活/' },
     { text: '为什么要写博客', link: '/docs/me/为什么要写博客/' },
 ]
 
 // 我的简历
 export const MODULE_RESUME = [
     { text: '我的简历', link: '/docs/resume/' },
+]
+
+// 面试题
+export const MODULE_FRONT_VUE_INTERVIEW = [
+    {
+        text: 'JavaScript',
+        collapsed: false,
+        items: [
+            { text: '数据类型', link: '/docs/前端/面试/JavaScript/数据类型/' },
+            { text: '数据结构', link: '/docs/前端/面试/JavaScript/数据结构/' },
+            { text: 'typeof与instanceof区别', link: '/docs/前端/面试/JavaScript/typeof与instanceof区别/' },
+            { text: '原型和原型链', link: '/docs/前端/面试/JavaScript/原型和原型链/' },
+        ]
+    }
 ]

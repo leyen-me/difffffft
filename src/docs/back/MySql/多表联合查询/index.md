@@ -17,8 +17,10 @@ select * from A,B;
 ## 内连接查询
 
 ```sql
+-- 隐式内连接
 select * from A,B where 条件
 
+-- 显示内连接
 select * from A inner join B on 条件 
 ```
 
@@ -35,14 +37,36 @@ select * from B left outer join A on 条件
 select * from A full outer join B on 条件
 ```
 
+## 自连接查询
+
+```sql
+-- 内连接实现
+SELECT 克隆表.*, 本表.* FROM 克隆表, 本表 WHERE 本表.pid = 克隆表.id 
+
+-- 外连接实现
+SELECT 本表.*, 克隆表.name FROM 本表 LEFT JOIN 克隆表 on 本表.pid = 克隆表.id
+```
+
+## 联合查询
+
+```sql
+-- 条件，列数保持一致
+
+-- 直接合并
+select * from xxx
+union all
+select * from yyy
+
+
+-- 合并后去重
+select * from xxx
+union
+select * from yyy
+```
+
 ## 子查询
 
 ```
 select的嵌套
 ```
 
-## 表自关联
-
-```
-将一张表当成多张表来用
-```
