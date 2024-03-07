@@ -63,10 +63,3 @@ select * from xxx
 union
 select * from yyy
 ```
-
-## 子查询
-
-```
-select的嵌套
-```
-

@@ -126,6 +126,7 @@ export const MODULE_BACK_MYSQL = [
     { text: '多表关系', link: '/docs/back/MySql/多表关系/' },
     { text: '外键约束', link: '/docs/back/MySql/外键约束/' },
     { text: '多表联合查询', link: '/docs/back/MySql/多表联合查询/' },
+    { text: '子查询', link: '/docs/back/MySql/子查询/' },
 ]
 
 // 关于自己的心得相关文章
