@@ -4,13 +4,13 @@ layout: home
 hero:
   name: "DIFFFFFFT"
   text: "Web Developer"
-  tagline: 见天地 见众生 见自己
+  tagline: "东风夜放花千树，更吹落、星如雨。"
   actions:
     - theme: brand
-      text: 常用工具
-      link: /docs/网站/
+      text: Aboue Me
+      link: /docs/关于/
     - theme: alt
-      text: 在 Github 上查看
+      text: View on Github
       link: https://github.com/difffffft
   image:
     src: /images/logo-with-shadow.png
@@ -40,8 +40,43 @@ features:
     details: OpenAi反向代理工具
     link: https://github.com/difffffft/openai-proxy
     icon: 👍
-  - title: Threejs-Sokoban 
+  - title: Threejs-Sokoban
     details: 基于Three制作的3D版推箱子
     link: https://github.com/difffffft/threejs-sokoban
     icon: 😂
 ---
+
+<script setup>
+import { onMounted, onUnmounted } from "vue";
+
+let timer = null;
+
+function fetchTagline() {
+  fetch("https://v1.jinrishici.com/all.txt")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("网络请求失败");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      let tagline = document.querySelector(".tagline");
+      if (tagline) {
+        tagline.innerText = data;
+      }
+    })
+    .catch((error) => {
+      console.error("发生错误:", error);
+    });
+}
+
+onMounted(() => {
+  timer = setInterval(fetchTagline, 3000);
+});
+
+onUnmounted(() => {
+  if (timer) {
+    clearInterval(timer);
+  }
+});
+</script>
