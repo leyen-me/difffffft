@@ -27,6 +27,7 @@ export const 后端MYSQL = [
     { text: '外键约束', link: '/docs/后端/MySql/外键约束/' },
     { text: '多表联合查询', link: '/docs/后端/MySql/多表联合查询/' },
     { text: '子查询', link: '/docs/后端/MySql/子查询/' },
+    { text: '事务', link: '/docs/后端/MySql/事务/' },
 ]
 export const 后端其他 = [
     { text: '二进制权限', link: '/docs/后端/Other/二进制权限/' },
