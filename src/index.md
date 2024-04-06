@@ -28,13 +28,13 @@ features:
     details: 一个快捷搜索网站
     link: https://github.com/difffffft/search
     icon: 📦
-  - title: Chat-Server
-    details: 基于OpenAi的SDK构建的聊天机器人，可以自定义函数，和Chat-Client配套使用
-    link: https://github.com/difffffft/chat-server
+  - title: Open-Chat-Server
+    details: 基于OpenAi的SDK构建的聊天机器人，可以自定义，和Open-Chat-Web配套使用
+    link: https://github.com/difffffft/open-chat-server.git
     icon: 🔩
-  - title: Chat-Client
+  - title: Open-Chat-Web
     details: 基于Vue3和Element-Plus建的聊天机器人，和Chat-Server配套使用
-    link: https://github.com/difffffft/chat-client
+    link: https://github.com/difffffft/open-chat-web.git
     icon: 🔑
   - title: OpenAi-Proxy
     details: OpenAi反向代理工具

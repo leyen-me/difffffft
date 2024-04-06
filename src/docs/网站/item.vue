@@ -31,24 +31,17 @@ defineProps({
 ._container {
     width: 100%;
     display: block;
-    border: 1px solid #202127;
+    border: 1px solid;
     padding: 12px 24px;
-    background-color: #202127;
+    border-color: #F6F6F7;
+    background-color: #F6F6F7;
     border-radius: 8px;
     text-decoration: none;
-    margin-right: 20px;
+    margin-top: 12px;
 }
 
 ._container:last-child {
     margin-right: 0;
-}
-
-._container:hover {
-    border: 1px solid slateblue;
-}
-
-._container:hover ._title {
-    color: slateblue
 }
 
 ._title {
@@ -60,5 +53,18 @@ defineProps({
     font-size: 14px;
     color: var(--vp-c-text-2);
     white-space: nowrap;
+}
+
+.dark ._container{
+    border-color: #202127;
+    background-color: #202127;
+}
+
+.dark ._container:hover ._title{
+    color: slateblue
+}
+
+._container:hover{
+    border-color: slateblue;
 }
 </style>
