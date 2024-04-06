@@ -56,6 +56,20 @@ wsl --install
 sudo passwd root
 ```
 
+### 配置wsl内存
+
+```sh
+# 没有就新建
+C:\Users\YourUsername\.wslconfig
+```
+
+```ini
+[wsl2]
+memory=32GB
+```
+
+配置完成后重启电脑
+
 ### 安装anaconda
 
 1. 选择你linux对应的版本: https://www.anaconda.com/download/
